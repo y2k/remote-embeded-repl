@@ -12,7 +12,10 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     compile 'org.mozilla:rhino:1.7.7.2'
+    compile group: 'org.antlr', name: 'antlr4-runtime', version: '4.7.2'
 }
+
+sourceSets.main.java.srcDirs += "src/main/gen"
 
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
