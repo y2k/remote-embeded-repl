@@ -2,3 +2,6 @@
 .idea
 out
 gen/
+/local.properties
+*.iml
+lib/build
