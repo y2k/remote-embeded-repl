@@ -3,7 +3,7 @@ apply plugin: 'org.jetbrains.kotlin.jvm'
 group 'y2k'
 version '0.1'
 
-sourceSets.main.java.srcDirs += "src/main/gen"
+sourceSets.main.java.srcDirs += [ "src/main/gen", "gen" ]
 
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
